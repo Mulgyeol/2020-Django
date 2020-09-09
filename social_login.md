@@ -1,12 +1,12 @@
 # \[Django\] - Social Login
 
-이번 세션은 8월 25일 댓글 CRUD를 구현했던 `myblogproject`에서 이어 진행합니다.
+이번 세션은 8월 25일 댓글 CRUD를 구현했던 `myblogproject`에서 이어 진행합니다.<br><br>
 
 ## 개요
 
 다들 한번 쯤 구글으로 로그인,네이버로 로그인,카카오톡으로 로그인을 해보신 적이 있으실겁니다.
 
-저희는 오늘 이 소셜 로그인 기능을 구현해보려고 합니다.
+저희는 오늘 이 소셜 로그인 기능을 구현해보려고 합니다.<br><br>
 
 **1\. 패키지 설치하기**
 
@@ -16,7 +16,7 @@
     $ pip install django-allauth
 ```
 
-<br><p align="center"><img src="/img3/1.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img3/1.png" width = "800px"></p><br><br>
 
 **2\. settings.py 수정**
 
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     -   저희는 google로 실습을 해보겠습니다.
     -   만약 facebook이나 다른 소셜 로그인기능을 구현하고 싶다면 providers.facebook과 같이 작성합니다.
 
+<br><br>
 그 다음 스크롤을 settings.py 가장 밑으로 내려서 아래의 코드를 추가로 작성합니다.
 
 ```
@@ -66,6 +67,8 @@ LOGIN_REDIRECT_URL = '/'
 -   allauth라는 기능을 사용하기 위해서는 AUTHENTICATION\_BACKENDS 라는 튜플을 입력해 줘야합니다. (이렇게 작성해야 하는구나 정도로 이해하시면 됩니다.)
 -   아래쪽의 LOGIN\_REDIRECT\_URL 은 로그인 후 호출되는 url을 지정해주는 부분입니다.
 
+<br><br>
+
 **3\. myblogproject/urls.py 수정**
 
 우리는 아까 pip install을 통해 allauth 패키지를 설치했습니다.
@@ -82,11 +85,13 @@ urlpatterns = [
 ]
 ```
 
+<br><br>
+
 **4\. migrate**
 
 settings.py에 변경한 내역들을 migrate를 통해 알려줍니다.
 
-<br><p align="center"><img src="/img3/3.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img3/3.png" width = "800px"></p><br><br>
 
 **5\. admin 페이지**
 
@@ -97,6 +102,8 @@ settings.py에 변경한 내역들을 migrate를 통해 알려줍니다.
 이전 과 다르게 못 보던 탭들이 생긴 것을 확인할 수 있습니다.
 
 먼저, Sites를 눌러보겠습니다.
+
+<br><br>
 
 **\- Sites**
 
@@ -124,6 +131,8 @@ example site를 클릭합니다.
 
 Social applications를 선택합니다.
 
+<br><br>
+
 **\-Socail applications**
 
 <br><p align="center"><img src="/img3/9.png" width = "800px"></p><br>
@@ -142,21 +151,13 @@ Provider의 드롭다운 버튼을 클릭해 보면 우리가 아까 settings.py
 
 같이 한 번 해보겠습니다.
 
+<br><br>
+
 **6\. Google API**
 
 아래 페이지로 접속합니다.
 
-[
-
-Google Cloud Platform
-
-하나의 계정으로 모든 Google 서비스를 Google Cloud Platform을 사용하려면 로그인하세요.
-
-accounts.google.com
-
-
-
-](https://console.developers.google.com/?pli=1)
+[https://console.developers.google.com/?pli=1](https://console.developers.google.com/?pli=1)
 
 <br><p align="center"><img src="/img3/11.png" width = "800px"></p><br>
 
@@ -238,6 +239,8 @@ Sites의 왼쪽에 있는 항목을 오른쪽으로 넘겨(choose)줍니다.
 
 이제 구글과 우리 사이트가 연결되어 로그인 페이지를 구현하기 위한 모든 준비가 완료 되었습니다.
 
+<br><br>
+
 **7\. Templates 수정**
 
 이제 로그인을 구현할 home.html을 수정해줍니다.
@@ -275,6 +278,8 @@ Sites의 왼쪽에 있는 항목을 오른쪽으로 넘겨(choose)줍니다.
 -   {% provider\_login\_url 'google' %} 를 통해 구글 로그인을 사용할거라고 알려줍니다.
 -   본인이 원하는 모양으로 꾸며주시면 더 보기 좋겠죠?
 
+<br><br><br><br>
+
 \- 확인
 
 1) 로그인 상태
@@ -283,25 +288,27 @@ Sites의 왼쪽에 있는 항목을 오른쪽으로 넘겨(choose)줍니다.
 
 관리자 계정으로 로그인 되어있기 때문에 다음과 같은 화면이 뜹니다.
 
+<br><br>
+
 2) 로그아웃 상태
 
-<br><p align="center"><img src="/img3/28.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img3/28.png" width = "800px"></p><br><br>
 
 3) 회원가입
 
-<br><p align="center"><img src="/img3/29.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img3/29.png" width = "800px"></p><br><br>
 
 4) 로그인
 
-<br><p align="center"><img src="/img3/30.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img3/30.png" width = "800px"></p><br><br>
 
 5) 구글 로그인
 
-<br><p align="center"><img src="/img3/31.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img3/31.png" width = "800px"></p><br><br>
 
 6) 구글로 로그인 한 상태
 
-<br><p align="center"><img src="/img3/32.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img3/32.png" width = "800px"></p><br><br>
 
 **8\. 오류**
 
@@ -317,7 +324,7 @@ callback 주소가 등록되지 않아 그렇습니다.
 
 <br><p align="center"><img src="/img3/34.png" width = "800px"></p><br>
 
-**\- 회원가입 기능 / 가입완료 버튼을 누르면 오류페이지로 넘어가는 경우. (사실 가입은 되어있습니다.)**
+**\- 회원가입 기능을 사용해보고 싶은데, 가입완료 버튼을 누르면 오류페이지로 넘어가는 경우. (사실 가입은 되어있습니다.)**
 
 settings.py에 아래 코드를 추가해 줍니다.
 
@@ -326,3 +333,10 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 ```
 
 <br><p align="center"><img src="/img3/35.png" width = "800px"></p><br>
+
+[다음 : \[Django\] - Like](/like.md)
+
+
+## 목차 0910
+- [\[Django\] - Social Login](social_login.md)
+- [\[Django\] - Like](/like.md)

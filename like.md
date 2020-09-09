@@ -1,8 +1,12 @@
 # M:N 관계 설정 (좋아요 기능)
 
-> 지난 번에 만들어본 댓글 CRUD 1:N 관계에서는 하나의 모델(N)에 대하여 하나의 모델만이 연결이 될 수 있었습니다. 그러나 이번에 만들어 볼 “좋아요” 기능의 경우, 한명의 유저(user)가 여러 게시글(post)에 “좋아요”를 누를 수 있으며, 반대로 하나의 게시글(post)에도 여러명의 유저(user)가 좋아요를 누를 수 있어야합니다. 따라서 1:N 관계가 아니라 다대다(M:N) 관계 설정이 필요하다고 할 수 있습니다.
+> 지난 번에 만들어본 댓글 CRUD 1:N 관계에서는 하나의 모델(N)에 대하여 하나의 모델만이 연결이 될 수 있었습니다. 
+>그러나 이번에 만들어 볼 “좋아요” 기능의 경우, 한명의 유저(user)가 여러 게시글(post)에 “좋아요”를 누를 수 있으며, 반대로 하나의 게시글(post)에도 여러명의 유저(user)가 좋아요를 누를 수 있어야합니다. 
+>따라서 1:N 관계가 아니라 다대다(M:N) 관계 설정이 필요하다고 할 수 있습니다.
 
-<table style="border-collapse: collapse; width: 100%;" border="1"><tbody><tr><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">POST1</span></td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">[P1, U1]</span></td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">USER1</span></td></tr><tr><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">POST2</span></td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">[P2, U2]</span></td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">USER2</span></td></tr><tr><td style="width: 33.3333%; text-align: center;">&nbsp;</td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">[P2, U3]</span></td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">USER3</span></td></tr><tr><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">POST3</span></td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">[P3, U3]</span></td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">USER3</span></td></tr><tr><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">POST4</span></td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">[P3, U4]</span></td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">USER4</span></td></tr></tbody></table>
+<table align="center" style="border-collapse: collapse; width: 100%;" border="1"><tbody><tr><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">POST1</span></td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">[P1, U1]</span></td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">USER1</span></td></tr><tr><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">POST2</span></td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">[P2, U2]</span></td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">USER2</span></td></tr><tr><td style="width: 33.3333%; text-align: center;">&nbsp;</td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">[P2, U3]</span></td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">USER3</span></td></tr><tr><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">POST3</span></td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">[P3, U3]</span></td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">USER3</span></td></tr><tr><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">POST4</span></td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">[P3, U4]</span></td><td style="width: 33.3333%; text-align: center;"><span style="color: #333333;">USER4</span></td></tr></tbody></table>
+
+<br><br>
 
 **1\. models.py**
 
@@ -42,6 +46,8 @@ class Post(models.Model):
     -   Post\=>post.like\_users (해당 게시물을 좋아하는 사용자)
         
     -   User\=>user.like\_posts (해당 유저가 좋아하는 게시물)
+
+<br><br>
         
 
 **2\. migration 재설정**
@@ -56,7 +62,7 @@ $ python manage.py makemigrations
 $ python manage.py migrate
 ```
 
-<br><p align="center"><img src="/img3/38.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img3/38.png" width = "800px"></p><br><br>
 
 **3\. views.py & urls.py 코드 작성(좋아요 함수 구현)**
 
@@ -86,6 +92,8 @@ def like(request, post_id):
 #urls.py
 path('<int:post_id>/like/', views.like, name='like'),
 ```
+
+<br><br>
 
 **4\. detail.html 수정**
 
@@ -133,6 +141,8 @@ font Awesome은 벡터 기반의 웹폰트 아이콘 제공하는 사이트로, 
         </div>
 ```
 
+<br><br>
+
 **5\. base.html navbar 수정**
 
 로그인 상태를 navbar에 표시하기 위해 수정작업을 해줍니다.
@@ -167,7 +177,9 @@ font Awesome은 벡터 기반의 웹폰트 아이콘 제공하는 사이트로, 
         </div>
 ```
 
-확인
+<br><br>
+
+**확인**
 
 \- 로그인되지 않은 상태
 
@@ -191,4 +203,14 @@ font Awesome은 벡터 기반의 웹폰트 아이콘 제공하는 사이트로, 
 
 \- mulgyeol로 또 다른 게시물 좋아요 누르기
 
-<br><p align="center"><img src="/img3/44.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img3/44.png" width = "800px"></p><br><br>
+
+# 끝!
+
+
+[이전 : \[Django\] - Social Login](/social_login.md)
+
+
+## 목차 0910
+- [\[Django\] - Social Login](social_login.md)
+- [\[Django\] - Like](/like.md)
