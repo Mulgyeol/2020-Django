@@ -10,7 +10,7 @@
 
 **1\. models.py**
 
-```
+```python
 from django.conf import settings
 
 class Post(models.Model):
@@ -52,13 +52,13 @@ class Post(models.Model):
 
 **2\. migration 재설정**
 
-```
+```bash
 $ python manage.py makemigrations
 ```
 
 <br><p align="center"><img src="/img3/37.png" width = "800px"></p><br>
 
-```
+```bash
 $ python manage.py migrate
 ```
 
@@ -75,7 +75,7 @@ Post모델 클래스에 새로 생성한like\_users필드는 리스트의 형태
 -   post.like\_users.all(): 인스턴스 객체인post내like\_users안의 모든 유저정보를 가지고 옵니다.
 -   조건문을 이용하여 좋아요 기능 활성화/비활성화를 나눕니다.
 
-```
+```python
 #views.py
 def like(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
@@ -88,7 +88,7 @@ def like(request, post_id):
     return redirect('/' + str(post.id))
 ```
 
-```
+```python
 #urls.py
 path('<int:post_id>/like/', views.like, name='like'),
 ```
@@ -105,17 +105,17 @@ font Awesome은 벡터 기반의 웹폰트 아이콘 제공하는 사이트로, 
 
 이번엔 좋아요 기능을 나타내기위해 꽉찬 하트와 빈 하트를 각각 사용해보겠습니다.
 
--   조건문을 통해 현재user가posts.like\_users리스트 안에 있을 경우(좋아요가 이미 된 경우), 좋아요 이모티콘(꽉찬 하트)를 표시합니다. 그렇지 않은 경우(좋아요가 되지 않은 경우), 빈 하트 이모티콘을 표시합니다.
--   추가적으로post.like\_users.count를 통해 좋아요의 갯수를 카운팅 할 수 있습니다.
+-   조건문을 통해 현재 user가 posts.like\_users리스트 안에 있을 경우(좋아요가 이미 된 경우), 좋아요 이모티콘(꽉찬 하트)를 표시합니다. 그렇지 않은 경우(좋아요가 되지 않은 경우), 빈 하트 이모티콘을 표시합니다.
+-   추가적으로 post.like\_users.count를 통해 좋아요의 갯수를 카운팅 할 수 있습니다.
 -   fontAwesome을 사용하기 위한 CDN 코드를 base.html에 삽입합니다.
 -   좋아요를 누른 유저를 확인하기 위해 {{likeuser.username}}을 작성해줍니다.
 
-```
+```html
 <!--font Awesome CDN-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
 ```
 
-```
+```html
         <!-- Like-->
         <div class="card my-4">
           <div class="card-header">
@@ -147,7 +147,7 @@ font Awesome은 벡터 기반의 웹폰트 아이콘 제공하는 사이트로, 
 
 로그인 상태를 navbar에 표시하기 위해 수정작업을 해줍니다.
 
-```
+```html
         <div class="navbar navbar-dark bg-dark shadow-sm">
             <div class="container d-flex bd-highlight">
                 <div class="mr-auto p-2 bd-highlight">

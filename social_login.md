@@ -12,7 +12,7 @@
 
 먼저 소셜 로그인 기능을 사용하기 위해 필요한 패키지를 설치해 주겠습니다.
 
-```
+```bash
     $ pip install django-allauth
 ```
 
@@ -22,7 +22,7 @@
 
 그리고 settings.py를 수정해줘야 합니다.
 
-```
+```python
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -52,7 +52,7 @@ INSTALLED_APPS = [
 <br><br>
 그 다음 스크롤을 settings.py 가장 밑으로 내려서 아래의 코드를 추가로 작성합니다.
 
-```
+```python
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
@@ -77,7 +77,7 @@ LOGIN_REDIRECT_URL = '/'
 
 accounts로 시작하는 url이 들어올 경우 allauth.urls를 include해 사용합니다.
 
-```
+```python
 urlpatterns = [
     path('admin/', admin.site.urls),
     url('', include('myblog.urls')),
@@ -109,11 +109,11 @@ settings.py에 변경한 내역들을 migrate를 통해 알려줍니다.
 
 <br><p align="center"><img src="/img3/5.png" width = "800px"></p><br>
 
-처음 접속하면 examplesite라고 뜰겁니다.
+처음 접속하면 example.com이라고 뜰겁니다.
 
 sites는 우리가 소셜 로그인을 사용할 사이트를 의미합니다.
 
-example site를 클릭합니다.
+example.com를 클릭합니다.
 
 <br><p align="center"><img src="/img3/6.png" width = "800px"></p><br>
 
@@ -249,7 +249,7 @@ Sites의 왼쪽에 있는 항목을 오른쪽으로 넘겨(choose)줍니다.
 
 추가적으로 보기좋게 만들어주면 좋습니다. 
 
-```
+```html
 <!-- {% extends 'base.html' %} 밑에 아래 두 줄 추가 -->
 {% load socialaccount %}
 {% providers_media_js %}
@@ -328,7 +328,7 @@ callback 주소가 등록되지 않아 그렇습니다.
 
 settings.py에 아래 코드를 추가해 줍니다.
 
-```
+```python
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 ```
 
