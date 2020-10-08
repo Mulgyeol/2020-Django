@@ -19,3 +19,6 @@
 - [\[Django\] - Social Login](social_login.md)
 - [\[Django\] - Like](/like.md)
 
+## 목차 1008
+- [Elastic Beanstalk](/eb.md)
+- [Heroku](/heroku.md)
