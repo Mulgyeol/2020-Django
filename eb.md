@@ -2,7 +2,7 @@
 
 > Unilion 중앙 강의 EB배포 강의를 보완합니다.
 >
-> 이 세션 이후에 중앙 강의를 들으시면 좋습니다.
+> 이 세션 이후에 중앙 강의를 듣거나, 듣다가 막히면 이 세션을 보셔도 좋습니다.
 
 <br><br>
 
@@ -74,7 +74,7 @@ AWS 리소스에 대한 액세스를 안전하게 제어할 수 있는 웹서비
 
 ### 1. Elastic Beanstalk이란?
 
-Elastic Beanstalk은 배포를 위한 복잡한 환경설정과 엄청난한 시간투자에서 벗어날 수 있는 서비스 입니다. Java, .NET, PHP, Node.js, Python, Ruby, Go, Docker를 사용해서 웹 애플리케이션을 간편하게 배포하고 조정할 수 있습니다.
+Elastic Beanstalk은 배포를 위한 복잡한 환경 설정과 많은 시간 투자에서 벗어날 수 있는 서비스 입니다. Java, .NET, PHP, Node.js, Python, Ruby, Go, Docker를 사용해서 웹 애플리케이션을 간편하게 배포하고 조정할 수 있습니다.
 
 왜 배포가 간단할까요?? <br>
 Elastic Beanstalk에서는 간단하게 deploy명령어 하나로 자동으로 처리해주는 작업들이 있습니다.
