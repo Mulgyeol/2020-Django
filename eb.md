@@ -4,6 +4,8 @@
 >
 > 이 세션 이후에 중앙 강의를 들으시면 좋습니다.
 
+<br><br>
+
 ## 1. AWS 회원가입하기
 1. [https://aws.amazon.com/ko/](https://aws.amazon.com/ko/)
 <br><p align="center"><img src="/dp_img/9001.PNG" width = "800px"></p><br>
@@ -11,21 +13,21 @@
 - AWS 계정 생성 버튼을 누릅니다.
 
 2. 입력란을 채워줍니다.
-<br><p align="center"><img src="/dp_img/9002.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/dp_img/9002.png" width = "800px"></p><br>
 
 3. 다음에서 계정 유형은 `개인`을 선택하고, 나머지를 채웁니다.
-<br><p align="center"><img src="/dp_img/9003.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/dp_img/9003.png" width = "800px"></p><br>
 
 4. 해외 결제가 가능한 카드 정보를 입력합니다.
-<br><p align="center"><img src="/dp_img/9004.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/dp_img/9004.png" width = "800px"></p><br>
 
 - 해당 과정이 후 1달러가 자동적으로 결제됩니다.
 - 결제 확인을 위한 과정으로 며칠 후에 다시 입금됩니다.
 
 5. 다음화면에서 `기본 플랜`을 선택해 줍니다.
-<br><p align="center"><img src="/dp_img/9005.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/dp_img/9005.png" width = "800px"></p><br>
 
-
+<br><br>
 
 ## 2. IAM 유저 생성해보기
 
@@ -63,8 +65,10 @@ AWS 리소스에 대한 액세스를 안전하게 제어할 수 있는 웹서비
 - `사용자 만들기`를 눌러줍니다.
 <br><p align="center"><img src="/dp_img/04.PNG" width = "800px"></p><br>
 
-- `다음` 버튼을 누르다 보면 이제 사용자 생성을 성공했다는 화면과 함께 액세스 키 ID, 비밀 액세스키가 나옵니다. 지금이 이 키ID와 비밀 액세스키가 담긴 .csv를 다운로드 할 수 있는 마지막 기회입니다. 잘 보관해 주세요.
+- `다음` 버튼을 누르다 보면 이제 사용자 생성을 성공했다는 화면과 함께 액세스 키 ID, 비밀 액세스키가 나옵니다. 
+지금이 이 키ID와 비밀 액세스키가 담긴 .csv를 다운로드 할 수 있는 마지막 기회입니다. 잘 보관해 주세요.
 
+<br><br>
 
 ## 3. Elastic Beanstalk
 
@@ -72,7 +76,8 @@ AWS 리소스에 대한 액세스를 안전하게 제어할 수 있는 웹서비
 
 Elastic Beanstalk은 배포를 위한 복잡한 환경설정과 엄청난한 시간투자에서 벗어날 수 있는 서비스 입니다. Java, .NET, PHP, Node.js, Python, Ruby, Go, Docker를 사용해서 웹 애플리케이션을 간편하게 배포하고 조정할 수 있습니다.
 
-왜 배포가 간단하할까요?? Elastic Beanstalk에서는 간단하게 deploy명령어 하나로 자동으로 처리해주는 작업들이 있습니다.
+왜 배포가 간단할까요?? <br>
+Elastic Beanstalk에서는 간단하게 deploy명령어 하나로 자동으로 처리해주는 작업들이 있습니다.
 
 - amazon EC2 배포 환경 내에서 자동 설정(python, resion ...)
 - EC2, RDS, S3 등의 자동 연결
@@ -83,10 +88,12 @@ Elastic Beanstalk은 배포를 위한 복잡한 환경설정과 엄청난한 시
 지금은 위의 사항에 관해서는 몰라도 좋습니다. 
 그러면 이제 실제 배포를 해보면서 왜 배포가 간단한지에 대해서 알아봅시다.
 
+<br><br>
 
 ### 2. 기본 프로젝트 만들기
 
 지난 시간의 ckeditor 실습의 아주 앞부분만 생성해놓고 배포를 해보겠습니다.
+[지난 세션 확인하기](https://jun108059.github.io/django-blog/CKEditor/00.ckeditor.html#_1-blog-ckeditor-%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3-%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%80%E1%85%B5)
 
     1. 바탕화면에 ebdeploy 폴더 생성
     2. vscode로 해당 폴더 open
@@ -110,6 +117,8 @@ Elastic Beanstalk은 배포를 위한 복잡한 환경설정과 엄청난한 시
         ```
     10. ~ collectstatic 실행까지 완료
 
+<br><br>
+
 ### 3. requirements.txt
 
 이번엔 manage.py가 있는 경로에 requirements.txt 파일을 만들어 줄겁니다.
@@ -124,6 +133,9 @@ Elastic Beanstalk에서는 이 requirements.txt를 통해 애플리케이션이 
     $ pip freeze > requirements.txt
 ```
 이 명령어를 치면 requirements.txt가 생성되면서 pip으로 설치된 패키지들이 입력이 되는걸 확인할 수 있습니다.
+
+<br><br>
+
 
 ### 4. .ebextensions
 
@@ -140,19 +152,21 @@ Elastic Beanstalk에서는 이 requirements.txt를 통해 애플리케이션이 
             WSGIPath: <프로젝트 명>/wsgi.py
 ```
 
-django.config 안에 채워줄 내용입니다. 
-WSGIPath는 본인의 wsgi.py가 있는 경로를 적어주면 됩니요. 
-wsgi는 Python에서 웹 어플리케이션이 웹 서버와 통신하기 위한 인터페이스입니다. 
-EB는 이 파일을 통해서 우리 어플리케이션의 wsgi가 설정되어있는 경로를 알게 됩니다.
+django.config 안에 채워줄 내용입니다.<br>
+WSGIPath는 본인의 wsgi.py가 있는 경로를 적어주면 됩니다. <br>
+wsgi는 Python에서 웹 어플리케이션이 웹 서버와 통신하기 위한 인터페이스입니다.<br>
+EB는 이 파일을 통해서 우리 어플리케이션의 wsgi가 설정되어있는 경로를 알게 됩니다.<br>
 
-<br><p align="center"><img src="/dp_img/9006.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/dp_img/9006.PNG" width = "300px"></p><br>
 
-여기까지 완료했을 때 파일구조는 프로젝트 이름이나 앱 이름을 제외하고는 다음과 같아야 합니다! 
+여기까지 완료했을 때 파일구조는 프로젝트 이름이나 앱 이름을 제외하고는 다음과 같아야 합니다! <br>
 이 구조가 아주 중요하니깐 배포하기 전에 확인해주세요.
 
+<br><br>
 
 ### 5. 가상환경 비활성화 deactivate
 다음 단계를 위해 deactivate 명령어로 가상환경을 비활성화 시켜줍니다.
+<br><br>
 
 ### 6. Elastic Beanstalk 기본 환경 설정과 배포
 
@@ -225,7 +239,7 @@ eb init 명령어를 이용해서 Elastic Beanstalk 플랫폼, 지역, 어플리
 <br><p align="center"><img src="/dp_img/25.PNG" width = "800px"></p><br>
 
 이렇게 credentials를 제공하라고 뜨면 아까 저장했던 IAM credential CSV파일에 있는 id랑 key를 입력해줍니다.
-<br><p align="center"><img src="/dp_img/9008.JPG" width = "800px"></p><br>
+<br><p align="center"><img src="/dp_img/9008.jpg" width = "800px"></p><br>
 
 `Application ebdeploy has been created.` 라는 말이 나오면 정상적으로 생성된겁니다.
 
@@ -238,7 +252,7 @@ eb init 명령어를 이용해서 Elastic Beanstalk 플랫폼, 지역, 어플리
 ```
     $ eb create <환경이름>
 ```
-<br><p align="center"><img src="/dp_img/29.JPG" width = "800px"></p><br>
+<br><p align="center"><img src="/dp_img/29.PNG" width = "800px"></p><br>
 
 `Successfully launched environment: ebdeploy` 라는 말이 나오면 정상적으로 환경이 생성된겁니다.
 
@@ -249,7 +263,7 @@ eb init 명령어를 이용해서 Elastic Beanstalk 플랫폼, 지역, 어플리
 ```
     $ eb status
 ```
-<br><p align="center"><img src="/dp_img/30.JPG" width = "800px"></p><br>
+<br><p align="center"><img src="/dp_img/30.PNG" width = "800px"></p><br>
 
 표시된 CNAME 부분을 복사해서
 settings.py의 ALLOWED_HOSTS에 넣어줍니다.
@@ -275,7 +289,7 @@ eb deploy 명령을 통해서 배포해 줍니다.
 ```
 
 위 명령어로 배포가 잘 되었는지 확인해 줍니다.
-<br><p align="center"><img src="/dp_img/31.JPG" width = "800px"></p><br>
+<br><p align="center"><img src="/dp_img/31.PNG" width = "800px"></p><br>
 
 
 8. 종료
@@ -284,7 +298,7 @@ eb deploy 명령을 통해서 배포해 줍니다.
 ```
     $ eb teminate --all
 ```
-<br><p align="center"><img src="/dp_img/32.JPG" width = "800px"></p><br>
+<br><p align="center"><img src="/dp_img/32.PNG" width = "800px"></p><br>
 
 
 ## 목차 1008
