@@ -22,5 +22,5 @@
 
 ## 목차 1008
 
-- [Elastic Beanstalk](/eb.md)
+- [Elastic Beanstalk](/Elastic-Beanstalk.md)
 - [Heroku](/heroku.md)
