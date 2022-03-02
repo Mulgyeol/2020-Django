@@ -5,7 +5,7 @@
 - [Blog project CR-1 (Model 다루기)](./blog-project-CR-1-model.md)
 - [Blog project CR-2 (Model에서 데이터 가져오기)](./blog-project-CR-2-model-데이터가져오기.md)
 - [Blog project CR-3 (Detail 페이지)](./blog-project-CR-3-model-detail.md)
-- [Blog project CR-4 (Create))](./blog-project-CR-4-create.md)
+- [Blog project CR-4 (Create)](./blog-project-CR-4-create.md)
 
 ## 목차 0825
 
