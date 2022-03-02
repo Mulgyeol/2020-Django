@@ -34,10 +34,10 @@ $ python manage.py startapp 'myblog' # app 생성
 $ python manage.py runserver # http://127.0.0.1:8000/ #확인하기
 ```
 
-<br><p align="center"><img src="/img2/1.png" width = "800px"></p><br>
-<br><p align="center"><img src="/img2/2.png" width = "800px"></p><br>
-<br><p align="center"><img src="/img2/3.png" width = "800px"></p><br>
-<br><p align="center"><img src="/img2/4.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/1.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/2.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/3.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/4.png" width = "800px"></p><br>
 
 <br><br>
 
@@ -55,7 +55,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-<br><p align="center"><img src="/img2/5.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/5.png" width = "800px"></p><br>
 ---
 
 <br><br>
@@ -207,19 +207,19 @@ $ python manage.py collectstatic
 
 이제 관리자 페이지에 로그인을 해서 저희가 만든 model, Post와 Commnet를 확인해 보겠습니다.
 
-<br><p align="center"><img src="/img2/6.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/6.png" width = "800px"></p><br>
 
-<br><p align="center"><img src="/img2/7.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/7.png" width = "800px"></p><br>
 
 아직 게시물이 없기 때문에 Post 부분에 선택사항이 존재하지 않습니다.
 
 일단, Post를 하나 추가해주겠습니다.
 
-<br><p align="center"><img src="/img2/8.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/8.png" width = "800px"></p><br>
 
 그리고 나서 Add comment를 해주면 Post에서 방금 작성한 게시물을 선택할 수 있습니다.
 
-<br><p align="center"><img src="/img2/9.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/9.png" width = "800px"></p><br>
 
 저장버튼을 눌러주시면
 

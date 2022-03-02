@@ -85,7 +85,7 @@ home.html에서 new.html로 넘어가는 링크를 걸어 줍니다.
 
 5\. 클릭해서 new로 넘어가는지 확인.
 
-<p align="center"><img src="/img/20.PNG" width = "800px"></p><br><br>
+<p align="center"><img src="/img/CR/20.PNG" width = "800px"></p><br><br>
 
 Add Post를 눌렀을 때, new로 넘어가지만
 
@@ -144,9 +144,9 @@ def create(request):
 
 4\. 확인
 
-<p align="center"><img src="/img/21.PNG" width = "800px"></p><br><br>
+<p align="center"><img src="/img/CR/21.PNG" width = "800px"></p><br><br>
 
-<p align="center"><img src="/img/22.PNG" width = "800px" ></p><br><br>
+<p align="center"><img src="/img/CR/22.PNG" width = "800px" ></p><br><br>
 
 
 끝!

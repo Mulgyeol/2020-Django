@@ -15,7 +15,7 @@
     $ pip install django==2.1.1
 ```
 
-<br><p align="center"><img src="/dp_img/1001.PNG" width = "400px"></p><br>
+<br><p align="center"><img src="/img/deploy/1001.PNG" width = "400px"></p><br>
 
 
 ## 웹사이트에 올릴 준비하기
@@ -85,7 +85,7 @@
 
 1. [https://www.heroku.com](https://www.heroku.com)에 접속해서 회원가입을 해줍니다. 
 절차는 어렵지 않으니 생략합니다
-<br><p align="center"><img src="/dp_img/1002.PNG" width = "500px"></p><br>
+<br><p align="center"><img src="/img/deploy/1002.PNG" width = "500px"></p><br>
 
 2. [https://devcenter.heroku.com/articles/getting-started-with-python](https://devcenter.heroku.com/articles/getting-started-with-python)
 
@@ -95,7 +95,7 @@
 
 본인에게 해당되는 운영체제를 선택해서 설치해줍니다.<br>
 
-<br><p align="center"><img src="/dp_img/1003.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/1003.png" width = "800px"></p><br>
 
 
 3. .gitignore 파일 만들기
@@ -127,7 +127,7 @@ manage.py가 있는 경로애 `Procfile`이라는 파일을 만들어 다음 내
     web: gunicorn <프로젝트 명>.wsgi --log-file -
 ```
 
-<br><p align="center"><img src="/dp_img/1004.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/1004.PNG" width = "800px"></p><br>
 <br><br>
 
 ### 2. Gunicorn 설치하기
@@ -202,13 +202,13 @@ heroku가 postgresql를 기본 옵션으로 하고 있기 때문이라고만 생
 manage.py가 있는 경로에<br>
 runtime.txt 라는 파일을 만들고 안에 python 버전을 적어줍시다.<br>
 
-<br><p align="center"><img src="/dp_img/1005.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/1005.PNG" width = "800px"></p><br>
 
 ```
     python-3.7.3
 ```
 
-<br><p align="center"><img src="/dp_img/1006.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/1006.PNG" width = "800px"></p><br>
 
 
 지금까지의 작업을 github repo에 커밋, 푸쉬 해줍니다.
@@ -224,18 +224,18 @@ runtime.txt 라는 파일을 만들고 안에 python 버전을 적어줍시다.<
     $ heroku login
 ```
 
-<br><p align="center"><img src="/dp_img/1007.PNG" width = "800px"></p><br>
-<br><p align="center"><img src="/dp_img/1008.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/1007.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/1008.PNG" width = "800px"></p><br>
 
 로그인을 해준다.
 
-<br><p align="center"><img src="/dp_img/1009.PNG" width = "800px"></p><br>
-<br><p align="center"><img src="/dp_img/1010.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/1009.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/1010.PNG" width = "800px"></p><br>
 
 ```
     $ heroku create
 ```
-<br><p align="center"><img src="/dp_img/1011.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/1011.PNG" width = "800px"></p><br>
 
 - heroku 에 push하기전에 위 수정 사항을 전부 commit 했는지 꼭 확인하시기 바랍니다.
 
@@ -254,7 +254,7 @@ migrate까지 해줬으면 끝입니다. <br>
 heroku open
 ```
 
-<br><p align="center"><img src="/dp_img/1012.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/1012.PNG" width = "800px"></p><br>
 
 
 # 끝!

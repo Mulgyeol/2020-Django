@@ -4,7 +4,7 @@ admin 페이지에서 아주 긴 본문을 가진 게시물을 추가한 다음,
 
 메인페이지를 확인해 보겠습니다.
 
-<p align="center"><img src="/img/15.PNG" width = "800px"></p><br><br>
+<p align="center"><img src="/img/CR/15.PNG" width = "800px"></p><br><br>
 
 아주 보기 어지럽네요.
 
@@ -140,7 +140,7 @@ detaili 페이지가 잘 동작하는지 서버를 켜 확인해봅시다.
 <br><br><br><br>
 4\. 확인
 
-<p align="center"><img src="/img/16.PNG" width = "800px"></p><br><br>
+<p align="center"><img src="/img/CR/16.PNG" width = "800px"></p><br><br>
 
 
 
@@ -207,13 +207,13 @@ class Post(models.Model):
 <br><br><br><br>
 7\. 메인페이지 확인
 
-<p align="center"><img src="/img/17.png" width = "800px"></p><br><br>
+<p align="center"><img src="/img/CR/17.png" width = "800px"></p><br><br>
 
 title에 detail로 향하는 링크가 걸렸습니다.
 
 저는 네 번째 게시물을 클릭해 보겠습니다.
 
-<p align="center"><img src="/img/18.png" width = "800px"></p><br><br>
+<p align="center"><img src="/img/CR/18.png" width = "800px"></p><br><br>
 
 /4/로 연결은 잘 됐지만 이제 각각 제목, 작성일자, 본문을 표시해 줘야 합니다.
 <br><br><br><br>
@@ -246,7 +246,7 @@ home과 연결하는 링크를 작성해 줍니다.
 <br><br><br><br>
 9\. 확인
 
-<p align="center"><img src="/img/19.PNG" width = "800px"></p><br><br>
+<p align="center"><img src="/img/CR/19.PNG" width = "800px"></p><br><br>
 
 
 ## 목차 

@@ -17,10 +17,10 @@
 
 ## 목차 0910
 
-- [\[Django\] - Social Login](social_login.md)
-- [\[Django\] - Like](/like.md)
+- [\[Django\] - Social Login](./blog-project-socialLogin.md)
+- [\[Django\] - Like](./blog-project-like.md)
 
 ## 목차 1008
 
-- [Elastic Beanstalk](/Elastic-Beanstalk.md)
-- [Heroku](/heroku.md)
+- [Elastic Beanstalk](./Elastic-Beanstalk.md)
+- [Heroku](./heroku.md)

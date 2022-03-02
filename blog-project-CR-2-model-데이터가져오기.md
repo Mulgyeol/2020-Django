@@ -72,7 +72,7 @@ urlpatterns = [
 <br><br><br><br>
 5\. 확인
 
-<p align="center"><img src="/img/9.PNG" width = "800px"></p><br><br>
+<p align="center"><img src="/img/CR/9.PNG" width = "800px"></p><br><br>
 
 
 원했던 출력 내용은 제목, 작성일자, 그리고 내용인데
@@ -111,15 +111,15 @@ template에서 필요한 부분에 뿌려주면 되는것이죠.
 </html>
 ```
 
-<p align="center"><img src="/img/10.PNG" width = "800px"></p><br><br>
+<p align="center"><img src="/img/CR/10.PNG" width = "800px"></p><br><br>
 
 게시물의 제목이 나온 것을 확인할 수 있네요.
 
 추가적으로 admin 페이지에서 2개의 게시물을 추가한 후에 확인해 보겠습니다.
 <br><br>
-<p align="center"><img src="/img/11.PNG" width = "800px"></p><br><br>
+<p align="center"><img src="/img/CR/11.PNG" width = "800px"></p><br><br>
 
-<p align="center"><img src="/img/12.PNG" width = "800px"></p><br><br>
+<p align="center"><img src="/img/CR/12.PNG" width = "800px"></p><br><br>
 
 all 메소드를 이용하면 모든 게시물을 확인할 수 있습니다.
 
@@ -159,7 +159,7 @@ body태그 안의 코드들을 하나씩 살펴보겠습니다.
 <br><br><br><br>
 7\. 결과 확인
 
-<p align="center"><img src="/img/13.PNG" width = "800px"></p><br><br>
+<p align="center"><img src="/img/CR/13.PNG" width = "800px"></p><br><br>
 
 8\. 보기 좋게 표 태그를 이용해 html 수정
 
@@ -205,7 +205,7 @@ body태그 안의 코드들을 하나씩 살펴보겠습니다.
 <br><br><br><br>
 9\. 결과 확인
 
-<p align="center"><img src="/img/14.PNG" width = "800px"></p><br><br>
+<p align="center"><img src="/img/CR/14.PNG" width = "800px"></p><br><br>
 
 
 

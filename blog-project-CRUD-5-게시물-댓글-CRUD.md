@@ -88,7 +88,7 @@ class Comment(models.Model):
 
 그리고 처음 admin 페이지에서 댓글을 작성했던 게시물의 detail 페이지로 들어가 봅시다.
 
-<br><p align="center"><img src="/img2/30.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/30.png" width = "800px"></p><br>
 
 자, 저희가 처음 작성했던 댓글이 달려있는 것을 확인할 수 있네요!
 
@@ -175,8 +175,8 @@ views.py를 다시 한 번 보면 이해가 더 잘 되실 겁니다.
 
 \- 확인(Edit과 Delete는 바로 이어 나옵니다.)
 
-<br><p align="center"><img src="/img2/31.png" width = "800px"></p><br>
-<br><p align="center"><img src="/img2/32.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/31.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/32.png" width = "800px"></p><br>
 
 
 <br><br>
@@ -233,7 +233,7 @@ Delete 버튼도 당연히 있어야겠죠?
 
 \- 확인(첫 번째 댓글 삭제)
 
-<br><p align="center"><img src="/img2/33.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/33.png" width = "800px"></p><br>
 
 <br><br>
 
@@ -355,8 +355,8 @@ views.py else구문에서 넘겨받은 댓글은 comment로 받아왔습니다.
 
 \- 확인
 
-<br><p align="center"><img src="/img2/34.png" width = "800px"></p><br>
-<br><p align="center"><img src="/img2/35.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/34.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/35.png" width = "800px"></p><br>
 
 ## **끝!**
 

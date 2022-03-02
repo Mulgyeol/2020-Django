@@ -8,24 +8,24 @@
 
 ## 1. AWS 회원가입하기
 1. [https://aws.amazon.com/ko/](https://aws.amazon.com/ko/)
-<br><p align="center"><img src="/dp_img/9001.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/9001.PNG" width = "800px"></p><br>
 
 - AWS 계정 생성 버튼을 누릅니다.
 
 2. 입력란을 채워줍니다.
-<br><p align="center"><img src="/dp_img/9002.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/9002.png" width = "800px"></p><br>
 
 3. 다음에서 계정 유형은 `개인`을 선택하고, 나머지를 채웁니다.
-<br><p align="center"><img src="/dp_img/9003.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/9003.png" width = "800px"></p><br>
 
 4. 해외 결제가 가능한 카드 정보를 입력합니다.
-<br><p align="center"><img src="/dp_img/9004.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/9004.png" width = "800px"></p><br>
 
 - 해당 과정이 후 1달러가 자동적으로 결제됩니다.
 - 결제 확인을 위한 과정으로 며칠 후에 다시 입금됩니다.
 
 5. 다음화면에서 `기본 플랜`을 선택해 줍니다.
-<br><p align="center"><img src="/dp_img/9005.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/9005.png" width = "800px"></p><br>
 
 <br><br>
 
@@ -42,28 +42,28 @@ AWS 리소스에 대한 액세스를 안전하게 제어할 수 있는 웹서비
 2. 유저 생성하기
 
 - 서비스에서 IAM을 검색하거나 찾아서 들어갑니다.
-<br><p align="center"><img src="/dp_img/01.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/01.PNG" width = "800px"></p><br>
 
 - 왼쪽 탭에서 액세스 관리 > 사용자로 들어간 후 사용자 추가를 눌러줍니다.
-<br><p align="center"><img src="/dp_img/02.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/02.PNG" width = "800px"></p><br>
 
 - 사용자 이름을 입력하고, 액세스 유형은 저희는 CLI를 사용할 거기 때문에 `프로그래밍 방식 액세스`를 선택합니다.
-<br><p align="center"><img src="/dp_img/03.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/03.PNG" width = "800px"></p><br>
 
 - 다음은 이 유저에게 권한을 부여하는 과정입니다, `기존 정책 직접 연결`을 선택한 다음,
-<br><p align="center"><img src="/dp_img/04.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/04.PNG" width = "800px"></p><br>
 
 - `AmazonEC2FullAccess` `AmazonS3FullAccess` `AWSElasticBeanstalkFullAccess`를 추가해 줍니다.
 
-<br><p align="center"><img src="/dp_img/05.PNG" width = "800px"></p><br>
-<br><p align="center"><img src="/dp_img/06.PNG" width = "800px"></p><br>
-<br><p align="center"><img src="/dp_img/07.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/05.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/06.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/07.PNG" width = "800px"></p><br>
 
 - 여기선 그냥 다음 버튼을 눌러줍니다.
-<br><p align="center"><img src="/dp_img/08.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/08.PNG" width = "800px"></p><br>
 
 - `사용자 만들기`를 눌러줍니다.
-<br><p align="center"><img src="/dp_img/04.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/04.PNG" width = "800px"></p><br>
 
 - `다음` 버튼을 누르다 보면 이제 사용자 생성을 성공했다는 화면과 함께 액세스 키 ID, 비밀 액세스키가 나옵니다. 
 지금이 이 키ID와 비밀 액세스키가 담긴 .csv를 다운로드 할 수 있는 마지막 기회입니다. 잘 보관해 주세요.
@@ -157,7 +157,7 @@ WSGIPath는 본인의 wsgi.py가 있는 경로를 적어주면 됩니다. <br>
 wsgi는 Python에서 웹 어플리케이션이 웹 서버와 통신하기 위한 인터페이스입니다.<br>
 EB는 이 파일을 통해서 우리 어플리케이션의 wsgi가 설정되어있는 경로를 알게 됩니다.<br>
 
-<br><p align="center"><img src="/dp_img/9006.PNG" width = "300px"></p><br>
+<br><p align="center"><img src="/img/deploy/9006.PNG" width = "300px"></p><br>
 
 여기까지 완료했을 때 파일구조는 프로젝트 이름이나 앱 이름을 제외하고는 다음과 같아야 합니다! <br>
 이 구조가 아주 중요하니깐 배포하기 전에 확인해주세요.
@@ -181,14 +181,14 @@ Elastic Beanstalk에서는 파일들의 위치, 가상환경 여부가 아주 �
     $ pip install awsebcli --upgrade --user
 ```
 
-<br><p align="center"><img src="/dp_img/20.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/20.PNG" width = "800px"></p><br>
 
 이게 제대로 설치되었나 확인해보기 위해서 명령어를 쳐봅시다.
 
 ```
     $ eb --version
 ```
-<br><p align="center"><img src="/dp_img/21.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/21.PNG" width = "800px"></p><br>
 
 위와 같이 나온다면 성공입니다.
 
@@ -226,7 +226,7 @@ gitignore.io에 가서 만들면 쉽게 만들 수 있는거 다들 아시죠?
 3. 프로젝트를 깃허브 새 repo에 push하기
  - manage.py가 있는 경로에서 git init 한 후 커밋 푸쉬 해 줍니다.
 
-<br><p align="center"><img src="/dp_img/9007.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/9007.PNG" width = "800px"></p><br>
 
 4. eb init
 ```
@@ -236,10 +236,10 @@ gitignore.io에 가서 만들면 쉽게 만들 수 있는거 다들 아시죠?
 eb init -p python-3.6 <이름>
 eb init 명령어를 이용해서 Elastic Beanstalk 플랫폼, 지역, 어플리케이션 이름을 지정하여 초기화 시켜줍시다.
 
-<br><p align="center"><img src="/dp_img/25.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/25.PNG" width = "800px"></p><br>
 
 이렇게 credentials를 제공하라고 뜨면 아까 저장했던 IAM credential CSV파일에 있는 id랑 key를 입력해줍니다.
-<br><p align="center"><img src="/dp_img/9008.jpg" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/9008.jpg" width = "800px"></p><br>
 
 `Application ebdeploy has been created.` 라는 말이 나오면 정상적으로 생성된겁니다.
 
@@ -252,7 +252,7 @@ eb init 명령어를 이용해서 Elastic Beanstalk 플랫폼, 지역, 어플리
 ```
     $ eb create <환경이름>
 ```
-<br><p align="center"><img src="/dp_img/29.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/29.PNG" width = "800px"></p><br>
 
 `Successfully launched environment: ebdeploy` 라는 말이 나오면 정상적으로 환경이 생성된겁니다.
 
@@ -263,7 +263,7 @@ eb init 명령어를 이용해서 Elastic Beanstalk 플랫폼, 지역, 어플리
 ```
     $ eb status
 ```
-<br><p align="center"><img src="/dp_img/30.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/30.PNG" width = "800px"></p><br>
 
 표시된 CNAME 부분을 복사해서
 settings.py의 ALLOWED_HOSTS에 넣어줍니다.
@@ -289,7 +289,7 @@ eb deploy 명령을 통해서 배포해 줍니다.
 ```
 
 위 명령어로 배포가 잘 되었는지 확인해 줍니다.
-<br><p align="center"><img src="/dp_img/31.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/31.PNG" width = "800px"></p><br>
 
 
 8. 종료
@@ -298,7 +298,7 @@ eb deploy 명령을 통해서 배포해 줍니다.
 ```
     $ eb teminate --all
 ```
-<br><p align="center"><img src="/dp_img/32.PNG" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deploy/32.PNG" width = "800px"></p><br>
 
 
 ## 목차 1008

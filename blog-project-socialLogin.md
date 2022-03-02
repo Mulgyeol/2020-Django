@@ -16,7 +16,7 @@
     $ pip install django-allauth
 ```
 
-<br><p align="center"><img src="/img3/1.png" width = "800px"></p><br><br>
+<br><p align="center"><img src="/img/deep/1.png" width = "800px"></p><br><br>
 
 **2\. settings.py 수정**
 
@@ -62,7 +62,7 @@ SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
 ```
 
-<br><p align="center"><img src="/img3/2.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/2.png" width = "800px"></p><br>
 
 -   allauth라는 기능을 사용하기 위해서는 AUTHENTICATION\_BACKENDS 라는 튜플을 입력해 줘야합니다. (이렇게 작성해야 하는구나 정도로 이해하시면 됩니다.)
 -   아래쪽의 LOGIN\_REDIRECT\_URL 은 로그인 후 호출되는 url을 지정해주는 부분입니다.
@@ -91,13 +91,13 @@ urlpatterns = [
 
 settings.py에 변경한 내역들을 migrate를 통해 알려줍니다.
 
-<br><p align="center"><img src="/img3/3.png" width = "800px"></p><br><br>
+<br><p align="center"><img src="/img/deep/3.png" width = "800px"></p><br><br>
 
 **5\. admin 페이지**
 
 이제 서버를 켜고 admin 페이지로 가서 확인해 봅시다.
 
-<br><p align="center"><img src="/img3/4.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/4.png" width = "800px"></p><br>
 
 이전 과 다르게 못 보던 탭들이 생긴 것을 확인할 수 있습니다.
 
@@ -107,7 +107,7 @@ settings.py에 변경한 내역들을 migrate를 통해 알려줍니다.
 
 **\- Sites**
 
-<br><p align="center"><img src="/img3/5.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/5.png" width = "800px"></p><br>
 
 처음 접속하면 example.com이라고 뜰겁니다.
 
@@ -115,15 +115,15 @@ sites는 우리가 소셜 로그인을 사용할 사이트를 의미합니다.
 
 example.com를 클릭합니다.
 
-<br><p align="center"><img src="/img3/6.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/6.png" width = "800px"></p><br>
 
 위의 Domain name과 Display name을 다음과 같이 바꿔줍니다.
 
-<br><p align="center"><img src="/img3/7.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/7.png" width = "800px"></p><br>
 
 그리고 save를 눌러줍니다.
 
-<br><p align="center"><img src="/img3/8.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/8.png" width = "800px"></p><br>
 
 이제 저희 사이트는 소셜 로그인이 어떤 사이트를 기반으로 동작할지 알게 되었습니다.
 
@@ -135,11 +135,11 @@ Social applications를 선택합니다.
 
 **\-Socail applications**
 
-<br><p align="center"><img src="/img3/9.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/9.png" width = "800px"></p><br>
 
 표시된 Add Social Applicaton을 눌러줍니다.
 
-<br><p align="center"><img src="/img3/10.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/10.png" width = "800px"></p><br>
 
 Provider의 드롭다운 버튼을 클릭해 보면 우리가 아까 settings.py에 등록해 뒀던 provider들이 출력됩니다.
 
@@ -159,49 +159,49 @@ Provider의 드롭다운 버튼을 클릭해 보면 우리가 아까 settings.py
 
 [https://console.developers.google.com/?pli=1](https://console.developers.google.com/?pli=1)
 
-<br><p align="center"><img src="/img3/11.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/11.png" width = "800px"></p><br>
 
 처음 접속하면 위와 같은 화면이 뜰겁니다. 
 
 서비스 약관에 체크한 후 동의 및 계속하기를 눌러줍니다.
 
-<br><p align="center"><img src="/img3/12.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/12.png" width = "800px"></p><br>
 
 그리고 보여지는 다음 화면에서 프로젝트 선택을 눌러줍니다.
 
-<br><p align="center"><img src="/img3/13.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/13.png" width = "800px"></p><br>
 
 새 프로젝트를 눌러줍니다.
 
-<br><p align="center"><img src="/img3/14.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/14.png" width = "800px"></p><br>
 
 프로젝트 이름은 적고 만들기를 눌러줍니다. 여기서는 생성된 기본값으로 만들었습니다.
 
-<br><p align="center"><img src="/img3/15.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/15.png" width = "800px"></p><br>
 
 프로젝트 선택을 눌렀던 곳에 만든 프로젝트 명이 적혀져있는 것을 확인할 수 있습니다.
 
 그 다음으로는 표시된 사용자 인증 정보를 선택해 줍니다.
 
-<br><p align="center"><img src="/img3/16.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/16.png" width = "800px"></p><br>
 
 사용자 인증 정보 만들기를 눌러줍니다.
 
-<br><p align="center"><img src="/img3/17.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/17.png" width = "800px"></p><br>
 
 OAuth 클라이언트 ID를 선택해 줍니다.
 
-<br><p align="center"><img src="/img3/18.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/18.png" width = "800px"></p><br>
 
 인증 정보를 얻기 위해 해줘야 하는 게 있다고 뜹니다.
 
 동의 화면 구성 버튼을 클릭합니다.
 
-<br><p align="center"><img src="/img3/19.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/19.png" width = "800px"></p><br>
 
 외부를 클릭하고 만들어줍니다.
 
-<br><p align="center"><img src="/img3/20.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/20.png" width = "800px"></p><br>
 
 그 다음 화면에서는 애플리케이션 이름만 간단하게 작성하고 저장해 줍니다.
 
@@ -209,29 +209,29 @@ OAuth 클라이언트 ID를 선택해 줍니다.
 
 다시 사용자 인증 정보 -> 사용자 인증 정보 만들기 -> OAuth 클라이언트 ID 만들기 를 선택해줍니다.
 
-<br><p align="center"><img src="/img3/21.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/21.png" width = "800px"></p><br>
 
 웹 애플리케이션을 선택합니다.
 
-<br><p align="center"><img src="/img3/22.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/22.png" width = "800px"></p><br>
 
 그 다음 생기는 화면에는 다음과 같이 작성하고 저장해줍니다.
 
-<br><p align="center"><img src="/img3/23.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/23.png" width = "800px"></p><br>
 
 다음과 같이 생성된 것을 확인할 수 있습니다.
 
 표시된 ID를 클릭해 줍니다.
 
-<br><p align="center"><img src="/img3/24.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/24.png" width = "800px"></p><br>
 
 우측에 표시되어있는 위의 내용을 Admin 페이지 탭으로 돌아가 복붙 해주시면 됩니다.
 
-<br><p align="center"><img src="/img3/25.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/25.png" width = "800px"></p><br>
 
 그리고 나서
 
-<br><p align="center"><img src="/img3/26.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/26.png" width = "800px"></p><br>
 
 Sites의 왼쪽에 있는 항목을 오른쪽으로 넘겨(choose)줍니다.
 
@@ -284,7 +284,7 @@ Sites의 왼쪽에 있는 항목을 오른쪽으로 넘겨(choose)줍니다.
 
 1) 로그인 상태
 
-<br><p align="center"><img src="/img3/27.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/27.png" width = "800px"></p><br>
 
 관리자 계정으로 로그인 되어있기 때문에 다음과 같은 화면이 뜹니다.
 
@@ -292,23 +292,23 @@ Sites의 왼쪽에 있는 항목을 오른쪽으로 넘겨(choose)줍니다.
 
 2) 로그아웃 상태
 
-<br><p align="center"><img src="/img3/28.png" width = "800px"></p><br><br>
+<br><p align="center"><img src="/img/deep/28.png" width = "800px"></p><br><br>
 
 3) 회원가입
 
-<br><p align="center"><img src="/img3/29.png" width = "800px"></p><br><br>
+<br><p align="center"><img src="/img/deep/29.png" width = "800px"></p><br><br>
 
 4) 로그인
 
-<br><p align="center"><img src="/img3/30.png" width = "800px"></p><br><br>
+<br><p align="center"><img src="/img/deep/30.png" width = "800px"></p><br><br>
 
 5) 구글 로그인
 
-<br><p align="center"><img src="/img3/31.png" width = "800px"></p><br><br>
+<br><p align="center"><img src="/img/deep/31.png" width = "800px"></p><br><br>
 
 6) 구글로 로그인 한 상태
 
-<br><p align="center"><img src="/img3/32.png" width = "800px"></p><br><br>
+<br><p align="center"><img src="/img/deep/32.png" width = "800px"></p><br><br>
 
 **8\. 오류**
 
@@ -316,13 +316,13 @@ Sites의 왼쪽에 있는 항목을 오른쪽으로 넘겨(choose)줍니다.
 
 구글 로그인을 클릭했을 때, 계정 선택화면이 아니라 다음과 같이 승인 오류가 나는 경우
 
-<br><p align="center"><img src="/img3/33.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/33.png" width = "800px"></p><br>
 
 OAuth 클라이언트 ID 를 다시 클릭해 리디렉션 URI를 추가합니다.
 
 callback 주소가 등록되지 않아 그렇습니다.
 
-<br><p align="center"><img src="/img3/34.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/34.png" width = "800px"></p><br>
 
 **\- 회원가입 기능을 사용해보고 싶은데, 가입완료 버튼을 누르면 오류페이지로 넘어가는 경우. (사실 가입은 되어있습니다.)**
 
@@ -332,7 +332,7 @@ settings.py에 아래 코드를 추가해 줍니다.
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 ```
 
-<br><p align="center"><img src="/img3/35.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/35.png" width = "800px"></p><br>
 
 [다음 : \[Django\] - Like](/like.md)
 

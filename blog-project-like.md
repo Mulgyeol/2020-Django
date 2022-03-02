@@ -28,7 +28,7 @@ class Post(models.Model):
         return self.body[:20]
 ```
 
-<br><p align="center"><img src="/img3/36.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/36.png" width = "800px"></p><br>
 
 -   like\_users 를 추가해줍니다.
     
@@ -56,13 +56,13 @@ class Post(models.Model):
 $ python manage.py makemigrations
 ```
 
-<br><p align="center"><img src="/img3/37.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/37.png" width = "800px"></p><br>
 
 ```bash
 $ python manage.py migrate
 ```
 
-<br><p align="center"><img src="/img3/38.png" width = "800px"></p><br><br>
+<br><p align="center"><img src="/img/deep/38.png" width = "800px"></p><br><br>
 
 **3\. views.py & urls.py 코드 작성(좋아요 함수 구현)**
 
@@ -183,27 +183,27 @@ font Awesome은 벡터 기반의 웹폰트 아이콘 제공하는 사이트로, 
 
 \- 로그인되지 않은 상태
 
-<br><p align="center"><img src="/img3/39.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/39.png" width = "800px"></p><br>
 
 \- 로그인 된 상태
 
-<br><p align="center"><img src="/img3/40.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/40.png" width = "800px"></p><br>
 
 \- mulgyeol이라는 user로 로그인해서 좋아요를 누른 상태
 
-<br><p align="center"><img src="/img3/41.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/41.png" width = "800px"></p><br>
 
 \- testuser1로 로그인 한 상태(좋아요 누르기 전)
 
-<br><p align="center"><img src="/img3/42.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/42.png" width = "800px"></p><br>
 
 \- testuser1로 로그인 한 상태(좋아요 누른 후)
 
-<br><p align="center"><img src="/img3/43.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/deep/43.png" width = "800px"></p><br>
 
 \- mulgyeol로 또 다른 게시물 좋아요 누르기
 
-<br><p align="center"><img src="/img3/44.png" width = "800px"></p><br><br>
+<br><p align="center"><img src="/img/deep/44.png" width = "800px"></p><br><br>
 
 # 끝!
 

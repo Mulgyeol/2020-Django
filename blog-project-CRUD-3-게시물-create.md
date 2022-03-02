@@ -225,7 +225,7 @@ path('<int:post_id>/', views.detail, name="detail"),
 
 \- 확인
 
-<br><p align="center"><img src="/img2/20.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/20.png" width = "800px"></p><br>
 
 <br><br>
 
@@ -347,7 +347,7 @@ path('new/', views.new, name="new"),
 
 \- 확인
 
-<br><p align="center"><img src="/img2/21.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/21.png" width = "800px"></p><br>
 
 내용을 입력하고 save 버튼을 눌러봅시다.
 
@@ -480,8 +480,8 @@ commit=False란 넘겨진 데이터를 바로Post모델에 저장하지는 말�
 
 \- 확인
 
-<br><p align="center"><img src="/img2/22.png" width = "800px"></p><br>
-<br><p align="center"><img src="/img2/23.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/22.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/23.png" width = "800px"></p><br>
 
 <br><br>
 

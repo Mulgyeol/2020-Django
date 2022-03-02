@@ -74,7 +74,7 @@ class Post(models.Model):
 ```
 
 <br><br>
-<p align="center"><img src="/img/1.PNG" width = "800px"></p><br>
+<p align="center"><img src="/img/CR/1.PNG" width = "800px"></p><br>
 
 처음 다뤄보는 내용이라 어려우시겠지만,
 
@@ -113,7 +113,7 @@ $ python manage.py makemigrations
 $ python manage.py migrate
 ```
 
-<p align="center"><img src="/img/2.PNG" width = "800px"></p><br><br>
+<p align="center"><img src="/img/CR/2.PNG" width = "800px"></p><br><br>
 
 5\. Admin 만들기
 
@@ -121,7 +121,7 @@ $ python manage.py migrate
 $ python manage.py createsuperuser
 ```
 
-<p align="center"><img src="/img/3.PNG" width = "800px"></p><br>
+<p align="center"><img src="/img/CR/3.PNG" width = "800px"></p><br>
 
 -   이름
 -   이메일
@@ -133,7 +133,7 @@ $ python manage.py createsuperuser
 
 6\. admin page 확인
 
-<p align="center"><img src="/img/4.PNG" width = "800px"></p><br>
+<p align="center"><img src="/img/CR/4.PNG" width = "800px"></p><br>
 
 Post가 보이지 않습니다.
 
@@ -164,7 +164,7 @@ admin.site.register(Post)
 
 저장을 하고 admin페이지를 새로고침해보면
 
-<p align="center"><img src="/img/5.PNG" width = "800px"></p><br>
+<p align="center"><img src="/img/CR/5.PNG" width = "800px"></p><br>
 
 위와 같이 저희가 만든 Blog앱과 Post가 보입니다.
 <br><br><br><br>
@@ -173,14 +173,14 @@ admin.site.register(Post)
 
 오른쪽의 Add 버튼을 눌러서 post를 추가해 봅시다.
 
-<p align="center"><img src="/img/6.PNG" width = "800px"></p><br>
+<p align="center"><img src="/img/CR/6.PNG" width = "800px"></p><br>
 
 
 저희가 model에서 작성했던 Title, Date, Body를 입력하고 저장할 수 있습니다.
 <br><br><br><br>
 10\. 확인
 
-<p align="center"><img src="/img/7.PNG" width = "800px"></p>
+<p align="center"><img src="/img/CR/7.PNG" width = "800px"></p>
 
 
 데이터가 하나 추가된 것을 확인할 수 있습니다.
@@ -210,7 +210,7 @@ class Post(models.Model):
 
 그리고 확인해 보면 다음과 같이 변한 것을 확인할 수 있습니다.
 
-<p align="center"><img src="/img/8.PNG" width = "800px"></p><br><br>
+<p align="center"><img src="/img/CR/8.PNG" width = "800px"></p><br><br>
 
 ## 목차 
 - [Blog project CR-1 (Model 다루기)](/1.md)

@@ -97,7 +97,7 @@ urlpatterns = [
 
 #### **4\. python manage.py runserver 확인**
 
-<br><p align="center"><img src="/img2/10.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/10.png" width = "800px"></p><br>
 
 ---
 
@@ -117,7 +117,7 @@ urlpatterns = [
 -   클릭해서 들어간 후에 우클릭-> 페이지 소스보기 한 후 코드를 그대로 복사합니다.
 -   그대로 home.html에 붙여넣기 합니다.
 
-<br><p align="center"><img src="/img2/11.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/11.png" width = "800px"></p><br>
 
 <br><br>
 
@@ -127,7 +127,7 @@ urlpatterns = [
 
 부트스트랩 메인 페이지에 있는 BootstrapCDN 부분을 확인해 봅시다.
 
-<br><p align="center"><img src="/img2/12.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/12.png" width = "800px"></p><br>
 
 > ****Contents Delivery Network(콘텐츠 전송 네트워크)  
 > ****
@@ -141,11 +141,11 @@ _When you only need to include Bootstrap's compiled CSS or JS, you can use Boots
 
 head태그 안에 오른쪽의 태그를 집어넣고 확인해 봅시다.
 
-<br><p align="center"><img src="/img2/13.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/13.png" width = "800px"></p><br>
 
 본인의 블로그를 꾸민다고 생각하고, home.html을 수정해줍니다.
 
-<br><p align="center"><img src="/img2/14.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/14.png" width = "800px"></p><br>
 
 ```
 {% load static %}
@@ -535,7 +535,7 @@ TEMPLATES = [
 
 \- 결과 확인
 
-<br><p align="center"><img src="/img2/15.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/15.png" width = "800px"></p><br>
 
 <br><br>
 
@@ -639,7 +639,7 @@ urlpatterns = [
 
 \- 확인
 
-<br><p align="center"><img src="/img2/16.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/16.png" width = "800px"></p><br>
 
 <br><br>
 
@@ -655,7 +655,7 @@ urlpatterns = [
 $ pip install faker
 ```
 
-<br><p align="center"><img src="/img2/17.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/17.png" width = "800px"></p><br>
 
 <br><br>
 
@@ -716,8 +716,8 @@ urlpatterns = [
 
 \- 확인
 
-<br><p align="center"><img src="/img2/18.png" width = "800px"></p><br>
-<br><p align="center"><img src="/img2/19.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/18.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/19.png" width = "800px"></p><br>
 
 <br><br>
 

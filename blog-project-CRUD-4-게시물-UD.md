@@ -13,7 +13,7 @@
         </div>
 ```
 
-<br><p align="center"><img src="/img2/24.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/24.png" width = "800px"></p><br>
 
 아직 url 연결은 해주지 않았네요.
 
@@ -84,7 +84,7 @@ detail 함수에서도 작성했었죠.
 
 자, 이제 확인해봅시다.
 
-<br><p align="center"><img src="/img2/25.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/25.png" width = "800px"></p><br>
 
 이미 작성된 데이터들이 입력란에 들어와 있고, 이미지도 다시 선택할 수 있습니다.
 
@@ -92,8 +92,8 @@ detail 함수에서도 작성했었죠.
 
 \- 확인
 
-<br><p align="center"><img src="/img2/26.png" width = "800px"></p><br>
-<br><p align="center"><img src="/img2/27.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/26.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/27.png" width = "800px"></p><br>
 
 <br><br>
 
@@ -138,8 +138,8 @@ path('<int:post_id>/delete/', views.delete, name="delete"),
 
 \-확인 Ronnie Olson 삭제
 
-<br><p align="center"><img src="/img2/28.png" width = "800px"></p><br>
-<br><p align="center"><img src="/img2/29.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/28.png" width = "800px"></p><br>
+<br><p align="center"><img src="/img/CRUD/29.png" width = "800px"></p><br>
 
 <br><br>
 
